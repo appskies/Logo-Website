@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact AI Logo Maker - Get in touch with us for support, inquiries, or feedback about our AI-powered logo design app.">
+    <title>Contact Us - AI Logo Maker</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/8f/5c/db8f5c21-655e-30fc-c2b3-30ee8e8e4d57/LogoGlassIcon-0-0-1x_U007epad-0-1-0-85-220.png/540x540bb.jpg">
+    <link rel="apple-touch-icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/8f/5c/db8f5c21-655e-30fc-c2b3-30ee8e8e4d57/LogoGlassIcon-0-0-1x_U007epad-0-1-0-85-220.png/540x540bb.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="/" class="navbar-brand">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/8f/5c/db8f5c21-655e-30fc-c2b3-30ee8e8e4d57/LogoGlassIcon-0-0-1x_U007epad-0-1-0-85-220.png/540x540bb.jpg" alt="AI Logo Maker" class="navbar-logo">
+                <span class="navbar-name">AI <span class="highlight">Logo</span> Maker</span>
+            </a>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="index.html#features" class="navbar-link">Features</a>
+                <a href="contact.html" class="navbar-link active">Contact</a>
+                <a href="https://apps.apple.com/us/app/ai-logo-maker-create-brands/id6745411546?itscg=30200&itsct=apps_box_badge&mttnsubad=6745411546" class="navbar-cta">
+                    <img src="Assets/whiteAppleBadge.svg" alt="Download on the App Store" class="navbar-badge">
+                </a>
+            </div>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <h1 class="section-title">Get In <span class="highlight">Touch</span></h1>
+                <p class="section-subtitle">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon">✉️</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>appskiesltd@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon">🚀</span>
+                        <div>
+                            <h3>Quick Response</h3>
+                            <p>We typically respond within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key (PUBLIC - safe to expose) -->
+                        <input type="hidden" name="access_key" value="e549a701-abc5-4e7c-9537-79efd76bed1f">
+
+                        <!-- Honeypot Field (Bot Trap - invisible to humans) -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+                        </div>
+
+                        <!-- hCaptcha Widget (FREE Spam Protection) -->
+                        <div class="h-captcha" data-captcha="true"></div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;">
+                                <span class="spinner"></span> Sending...
+                            </span>
+                        </button>
+
+                        <!-- Status Messages -->
+                        <div id="formStatus" class="form-status" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/8f/5c/db8f5c21-655e-30fc-c2b3-30ee8e8e4d57/LogoGlassIcon-0-0-1x_U007epad-0-1-0-85-220.png/540x540bb.jpg" alt="AI Logo Maker" class="footer-logo">
+                    <span class="footer-name">AI Logo Maker</span>
+                </div>
+                <nav class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <p class="footer-copyright">&copy; 2024 AI Logo Maker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <!-- Web3Forms Client Script with hCaptcha Support -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>
